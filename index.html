@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osaka Urban Development Co., Ltd. - Building Kansai's Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@300;700&family=Montserrat:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Noto Sans JP', 'sans-serif'],
+              josefin: ['Josefin Sans', 'sans-serif'],
+              roboto: ['Roboto', 'sans-serif'],
+              montserrat: ['Montserrat', 'sans-serif'],
+            },
+            colors: {
+              primary: '#003366',
+              secondary: '#0066cc',
+              accent: '#f0f4f8',
+              text: '#333333',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans text-text bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="/" class="text-2xl font-bold text-primary">
+          Osaka Urban Development Co., Ltd.
+        </a>
+        <nav class="hidden md:block">
+          <ul class="flex space-x-6 font-roboto">
+            <li>
+              <a
+                href="#about"
+                class="text-text hover:text-secondary transition duration-300"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#business"
+                class="text-text hover:text-secondary transition duration-300"
+                >Our Business</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="text-text hover:text-secondary transition duration-300"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#sustainability"
+                class="text-text hover:text-secondary transition duration-300"
+                >Sustainability</a
+              >
+            </li>
+            <li>
+              <a
+                href="#news"
+                class="text-text hover:text-secondary transition duration-300"
+                >News</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="text-text hover:text-secondary">EN</a>
+          <a href="#" class="text-text hover:text-secondary">JP</a>
+          <button
+            class="bg-primary text-white px-4 py-2 rounded hover:bg-secondary transition duration-300"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section with Fixed Image -->
+    <section
+      class="relative h-screen bg-cover bg-center"
+      style="
+        background-image: url('https://www.investasian.com/wp-content/uploads/2020/06/House-Japan.jpg');
+      "
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+      >
+        <div class="text-center px-4">
+          <h1
+            class="text-5xl md:text-7xl font-josefin font-bold text-white mb-6"
+          >
+            Building Kansai's Future
+          </h1>
+          <p class="text-xl md:text-2xl text-white mb-8 font-roboto">
+            Osaka Urban Development Co., Ltd. is dedicated to creating vibrant,
+            sustainable spaces in the heart of Japan's kitchen.
+          </p>
+          <a
+            href="#"
+            class="bg-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-secondary transition duration-300"
+            >Discover Our Vision</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-20 bg-accent">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-josefin font-bold mb-8 text-primary">
+          Latest Updates
+        </h2>
+        <ul class="space-y-4">
+          <li class="bg-white p-4 rounded shadow">
+            <time class="text-text font-roboto">2024/08/15</time>
+            <a
+              href="#"
+              class="block mt-2 text-primary hover:text-secondary transition duration-300"
+              >Groundbreaking Ceremony for Umeda Sky Tower II</a
+            >
+          </li>
+          <li class="bg-white p-4 rounded shadow">
+            <time class="text-text font-roboto">2024/08/01</time>
+            <a
+              href="#"
+              class="block mt-2 text-primary hover:text-secondary transition duration-300"
+              >Osaka Urban Development Announces New Eco-Friendly Residential
+              Project in Namba</a
+            >
+          </li>
+          <li class="bg-white p-4 rounded shadow">
+            <time class="text-text font-roboto">2024/07/20</time>
+            <a
+              href="#"
+              class="block mt-2 text-primary hover:text-secondary transition duration-300"
+              >Q2 Financial Results: Strong Growth in Kansai Commercial Real
+              Estate Market</a
+            >
+          </li>
+        </ul>
+        <div class="mt-8 text-center">
+          <a href="#" class="text-primary hover:text-secondary font-semibold"
+            >View All News</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Business Section -->
+    <section id="business" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl font-josefin font-bold mb-12 text-center text-primary"
+        >
+          Our Expertise
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-accent p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold mb-4 text-primary">
+              Commercial Development
+            </h3>
+            <p class="text-text mb-4">
+              Creating state-of-the-art office spaces and retail centers in
+              prime Osaka locations
+            </p>
+            <a href="#" class="text-primary hover:text-secondary"
+              >Explore Projects</a
+            >
+          </div>
+          <div class="bg-accent p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold mb-4 text-primary">
+              Residential Innovation
+            </h3>
+            <p class="text-text mb-4">
+              Developing modern, comfortable living spaces that reflect Osaka's
+              vibrant culture
+            </p>
+            <a href="#" class="text-primary hover:text-secondary"
+              >View Residences</a
+            >
+          </div>
+          <div class="bg-accent p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold mb-4 text-primary">
+              Urban Redevelopment
+            </h3>
+            <p class="text-text mb-4">
+              Revitalizing Osaka's historic districts while preserving their
+              unique character
+            </p>
+            <a href="#" class="text-primary hover:text-secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-accent">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl font-josefin font-bold mb-12 text-center text-primary"
+        >
+          About Osaka Urban Development
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="https://www.investasian.com/wp-content/uploads/2020/06/Edogawa-House.jpg"
+              alt="Osaka skyline"
+              class="rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-4 text-primary">Our Legacy</h3>
+            <p class="text-text mb-6">
+              Since our founding in 1950, Osaka Urban Development Co., Ltd. has
+              been instrumental in shaping the Kansai region's urban landscape.
+              Our deep understanding of Osaka's unique culture and economic
+              dynamics allows us to create spaces that not only meet the needs
+              of today but anticipate the demands of tomorrow.
+            </p>
+            <p class="text-text mb-6">
+              From the iconic Namba Parks to the cutting-edge Osaka Innovation
+              Hub, our projects stand as testaments to our commitment to
+              quality, sustainability, and community enhancement.
+            </p>
+            <a href="#" class="text-primary hover:text-secondary font-semibold"
+              >Discover Our History</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-4 font-josefin">
+              Osaka Urban Development Co., Ltd.
+            </h4>
+            <p class="font-roboto">Shaping Osaka's Skyline Since 1950</p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4 font-josefin">Quick Links</h4>
+            <ul class="space-y-2 font-roboto">
+              <li>
+                <a href="#" class="hover:text-accent transition duration-300"
+                  >Our Projects</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition duration-300"
+                  >Investor Relations</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition duration-300"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition duration-300"
+                  >Community Initiatives</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4 font-josefin">Contact Us</h4>
+            <p class="font-roboto">
+              1-1-3 Umeda, Kita-ku, Osaka 530-0001, Japan
+            </p>
+            <p class="font-roboto">Phone: +81 (0)6-6345-6789</p>
+            <p class="font-roboto">Email: info@osakaurban.co.jp</p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4 font-josefin">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="hover:text-accent transition duration-300"
+                >Twitter</a
+              >
+              <a href="#" class="hover:text-accent transition duration-300"
+                >LinkedIn</a
+              >
+              <a href="#" class="hover:text-accent transition duration-300"
+                >Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-accent text-center font-roboto">
+          <p>
+            &copy; 2024 Osaka Urban Development Co., Ltd. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
